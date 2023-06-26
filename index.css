@@ -601,6 +601,11 @@ footer .copy{
 }
 @media(max-width:800px){
 
+
+    body{
+        margin: 0 5px
+    }
+
     #home header .container #logo{
         font-size: 12px;
     }
