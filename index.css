@@ -519,7 +519,7 @@ footer .copy{
 
 
 
-@media(max-width:1200px){
+@media(max-width:1400px){
 
     #home header .container #logo{
         font-size: 15px;
@@ -598,7 +598,7 @@ footer .copy{
     }
     
 }
-@media(max-width:800px){
+@media(max-width:1080px){
 
 
     body{
@@ -676,7 +676,7 @@ footer .copy{
 
 
     .alimentos{
-        height: 120vh;
+        height: 90vh;
     }
     .alimentos .container .content .bebidas{
         padding: 5px 0px;
@@ -685,6 +685,7 @@ footer .copy{
         grid-gap: 10px;
     }
     .alimentos .container .content{
+        /* height: 80px; */
         padding: 5px 5px;
     }
     .alimentos .container .content .bebidas .imagenesbebidas{
