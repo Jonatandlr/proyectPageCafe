@@ -605,6 +605,10 @@ footer .copy{
         margin: 15px 5px
     }
 
+    #nav-menu{
+        width: 100%;
+    }
+
     #home header .container #logo{
         font-size: 12px;
     }
