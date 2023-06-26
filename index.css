@@ -18,7 +18,6 @@ li{
     list-style: none;
 }
 #divisorHorizontal{
-    margin-top: 30px;
     border-top: 2px solid #708b7b;
 }
 
@@ -603,7 +602,7 @@ footer .copy{
 
 
     body{
-        margin: 0 5px
+        margin: 15px 5px
     }
 
     #home header .container #logo{
@@ -643,12 +642,13 @@ footer .copy{
         align-items: center;
     }
     #homeContenido #texto h2{
-        font-size: 4vw;
+        font-size: 30px;
         display: flex;
         justify-content: center;
     }
     #homeContenido #texto li{
-        font-size: 2vw;
+        font-size: 16px;
+        /* padding-top:20px ; */
     }
 
 
@@ -657,7 +657,7 @@ footer .copy{
     }
 
     #divisorHorizontal{
-        margin-top:50px;
+        margin-top:20px;
     }
     #About .texto h2{
         padding:0px;
@@ -674,16 +674,24 @@ footer .copy{
         height: 120vh;
     }
     .alimentos .container .content .bebidas{
-        padding: 5px 15px;
+        padding: 5px 0px;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 10px;
+    }
+    .alimentos .container .content{
+        padding: 5px 5px;
     }
     .alimentos .container .content .bebidas .imagenesbebidas{
         margin-top: 10px;
     }
     .alimentos h2{
         font-size: 30px;
+    }
+    .alimentos .container .arrow{
+        width: 40px;
+        height: 40px;
+        font-size: 40px;
     }
 }
 
