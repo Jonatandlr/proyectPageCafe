@@ -1,0 +1,691 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@700&family=Poppins:wght@100;200;300;400;500;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    color:rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    /* height: 100vh; */
+    margin: 0 50PX
+}
+li{
+    list-style: none;
+}
+#divisorHorizontal{
+    margin-top: 30px;
+    border-top: 2px solid #708b7b;
+}
+
+
+/* menu Desplegable */
+#nav-menu{
+    margin-top: 0;
+    position: fixed;
+    z-index: 200;
+    display: flex;
+    flex-direction: column;
+    top: -100%;
+    height: 100%;
+    width: 95%;
+    justify-content: center;
+    align-items: center ;
+    transition: .2s;
+    background-color: #000000;
+    opacity: .95;
+}
+#nav-menu a{
+    text-decoration: none;
+    margin: 10px auto;
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+}
+#cerrarMenu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border: 3px solid #fff;
+    border-radius: 100%;
+    color: #d6a067;
+    transition: .5s;
+}
+#cerrarMenu:hover{
+    color: #fff;
+    background-color: #d6a067;
+}
+
+
+#nav-menu a:hover{
+    cursor: pointer;
+    color: #d6a067;
+}
+
+/* HOME */
+
+#home{
+    margin: auto;
+}
+
+#home header .container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+} 
+
+#home header .container #logo{
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#home header .container #logo:hover{
+    color: #d6a067;
+}
+
+#home header .container #menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#home header .container #menu .divisorLogoMenu{
+    border-left: 3px solid #d6a067;
+    height: 80px; 
+    margin: 0 auto; 
+}
+
+#home header .container #menu nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+
+#home header .container #menu a{
+    text-decoration: none;
+    padding: 10px 30px;
+    font-weight: bold;
+    color: #fff;
+}
+#home header .container #menu a:hover{
+    color: #d6a067;
+}
+
+#menu .menuLateral{
+    display: none;
+}
+
+
+/* home Contenido */
+
+#homeContenido{
+    position: relative;
+
+}
+#homeContenido .bg{
+    height: 500px;
+}
+#homeContenido #bg1{
+    background-image: url('Media/esfera.png');
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: 100% center;
+
+}
+
+#homeContenido #bg2{
+    background-image: url('Media/granos.png');
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: 90% top;
+
+}
+#homeContenido #bg3{
+    background-image: url('Media/cafeHome.png');
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: 100% bottom;
+}
+
+#homeContenido #texto{
+    position: fixed;
+    padding: 80px 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    /* padding: 10px 10px; */
+
+}
+
+#homeContenido #texto h2{
+    display: flex;
+    font-size: 3.5vw;
+    padding-bottom: 20px;
+}
+
+#homeContenido #texto ul{
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#homeContenido #texto li{
+    height: 2vw;
+    font-size: 2vw;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+#homeContenido #caracteristicas img{
+    height: 100%;
+}
+
+
+
+/* About */
+
+
+.AbouSection{
+    background-color: rgb(0, 0, 0);
+    position: relative;
+}
+#About{
+    
+    z-index: 1000;
+    padding: 80px 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#About .texto  {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+#About .texto h2{
+    padding: 10px 30px;
+    font-size: 4vw;
+}
+
+#About .texto p{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    padding: 10px 50PX;
+    font-size: 1.8vw;
+}
+
+#carusselCoffe{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#carusselCoffe .carta{
+    width: 200px;
+    background-position: center,center;
+    background-size: cover;
+    padding: 13vw;
+    margin: 12px;
+    border-radius: 50px;
+    border:2px solid #d6a067;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#carusselCoffe .carta:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+#carusselCoffe .carta:first-child{
+    background-image:linear-gradient(
+        0deg,
+        rgba(0,0,0,0.65),
+        rgba(0,0,0,0.65)
+    )
+    ,url("Media/carta1.png");
+    transition: 0.5s;
+}
+
+
+
+#carusselCoffe .carta:nth-child(2){
+    background-image:linear-gradient(
+        0deg,
+        rgba(0,0,0,0.65),
+        rgba(0,0,0,0.65)
+    )
+    ,url("Media/carta2.png");
+    transition: 0.5s;
+
+}
+
+
+#carusselCoffe .carta:nth-child(3){
+    background-image:linear-gradient(
+        0deg,
+        rgba(0,0,0,0.65),
+        rgba(0,0,0,0.65)
+    )
+    ,url("Media/carta3.png");
+    transition: 0.5s;
+}
+
+
+body #divisor2{
+
+    border-top: 2px solid #708b7b;
+    padding-top: 30px;
+}
+
+
+
+/* alimentos */
+.alimentos{
+    position: relative;
+    /* z-index: 300; */
+    background-color: black;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+
+.alimentos h2{
+    font-size: 4vw ;
+    padding: 20px;
+}
+.alimentos .container{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    width: 100%;
+    height: 100%;
+    font-size: 3vh;
+}
+.alimentos .conteinerArrow{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.alimentos .container .arrow{
+    border: 3px solid #fff;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 80px;
+    cursor: pointer; 
+    transition: .5s;
+}
+
+.alimentos .container .arrow:hover{
+    color: #000000;
+    background-color: #d6a067;
+    scale: 1.1;
+
+
+}
+
+
+.alimentos .container .content{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px 100px;
+}
+.alimentos .container .content h3{
+    padding-top: 10px;
+}
+.alimentos .container .content .bebidas{
+    padding: 10px 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+
+.alimentos .container .content .bebidas .imagenesbebidas{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+}
+
+
+
+#bebida1{
+    background-image:linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ), url("Media/bebidas/latteMacchiatto.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    border: 1px solid #000000;
+    border-radius: 50px;
+
+}
+#bebida2{
+    background-image:linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ), url("Media/bebidas/flatWhite.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    border: 1px solid #000000;
+    border-radius: 50px;
+}
+#bebida3{
+    background-image:linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ),  url("Media/bebidas/Mocha.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    border: 1px solid #000000;
+    border-radius: 50px;
+}
+#bebida4{
+    background-image:linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ),  url("Media/bebidas/caramelMacchiatto.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    border: 1px solid #000000;
+    border-radius: 50px;
+}
+#bebida5{
+    background-image:linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ),  url("Media/bebidas/capuccino.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    border: 1px solid #000000;
+    border-radius: 50px;
+}
+#bebida6{
+    background-image:linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ),  url("Media/bebidas/latte.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    border: 1px solid #000000;
+    border-radius: 50px;
+}
+
+
+/* contacto */
+
+#lineaH{
+    border: 1px solid #708b7b;
+    width: 100%;
+}
+.contacto{
+    position: relative;
+    height: 30vh;
+    background-color: #000000;
+}
+.contacto .container{
+    padding-top:30px ;
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: center;
+}
+
+.contacto .container h2{
+    font-size: 6vh;
+}
+#redes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contacto .container a{
+    font-size: 5vh;
+    color: #fff;
+    padding-right: 20px;
+}
+.contacto .container a:hover{
+    color: #d6a067;
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;   
+    font-size: 10px; 
+}
+footer .copy{
+    font-size: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+@media(max-width:1200px){
+
+    #home header .container #logo{
+        font-size: 15px;
+    }
+    #home header .container #logo img{
+        width: 80px;
+    }
+    #home header .container #menu nav{
+        display: none;
+    }
+    #home header .container #menu .divisorLogoMenu{
+        margin-right: 20px;
+    }
+    #menu .menuLateral{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        letter-spacing: 3px;
+        cursor: pointer;
+        transition: .3s;
+    }
+    #menu .menuLateral .barras{
+        width: 30px;
+        margin-left: 10px;
+    }
+    .linea{
+        width: 100%;
+        height: 3px;
+        background-color: #fff;
+        margin:10px 0;
+        transition: .3s;
+
+    }
+    .linea-efecto{
+        width: 50%;
+        height: 3px;
+        background-color: #fff;
+        margin:5px 0;
+        transition: .3s;
+    }
+
+    #menu .menuLateral:hover{
+        color: #d6a067;
+    }
+    #menu .menuLateral:hover .linea{
+        width: 50%;
+        background-color: #d6a067;
+    }
+    #menu .menuLateral:hover .linea-efecto{
+        width: 100%;
+        background-color: #d6a067;
+    }
+    #homeContenido #bg3{
+        background-size: 58%;
+    }
+
+    #About .texto {
+        justify-content: center;
+    }
+    #About .texto p{
+        display: none;
+    }
+
+
+    .alimentos .container .content{
+        padding: 10px 15px;
+    }
+    .alimentos .container .content h3{
+        display: flex;
+        justify-content: center;
+        align-items: center ;
+        font-size: 20px;
+    }
+    .alimentos .container .content .bebidas .imagenesbebidas{
+        font-size: 15px;
+    }
+    
+}
+@media(max-width:800px){
+
+    #home header .container #logo{
+        font-size: 12px;
+    }
+    #home header .container #logo img{
+        width: 50px;
+    }
+    #homeContenido #bg1{
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.3),
+            rgba(0,0,0,0.3)),
+        url('Media/esfera.png');
+        background-repeat: no-repeat;
+        background-size: auto;
+        background-position: center center;
+    }
+    #homeContenido #bg2{
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.3),
+            rgba(0,0,0,0.3)),
+        url('Media/granos.png');
+        background-repeat: no-repeat;
+        background-size: auto;
+        background-position: center center;
+    }
+    #homeContenido #bg3{
+        background-image: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #homeContenido #texto{
+        padding-top: 10px ;
+        align-items: center;
+    }
+    #homeContenido #texto h2{
+        font-size: 4vw;
+        display: flex;
+        justify-content: center;
+    }
+    #homeContenido #texto li{
+        font-size: 2vw;
+    }
+
+
+    #About{
+        padding: 30px 0px;
+    }
+
+    #divisorHorizontal{
+        margin-top:50px;
+    }
+    #About .texto h2{
+        padding:0px;
+    }
+    #carusselCoffe{
+        flex-direction: column;
+    }
+    #carusselCoffe .carta{
+        width: 100%;
+    }
+
+
+    .alimentos{
+        height: 120vh;
+    }
+    .alimentos .container .content .bebidas{
+        padding: 5px 15px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+    }
+    .alimentos .container .content .bebidas .imagenesbebidas{
+        margin-top: 10px;
+    }
+    .alimentos h2{
+        font-size: 30px;
+    }
+}
+
+
+
+
+
+
+
+

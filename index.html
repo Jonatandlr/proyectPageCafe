@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAUGET COFFEE</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"><!-- para redes --> 
+</head>
+<body>
+    <!-- menu Desplegable -->
+    <nav id="nav-menu">
+        <a href="#home" onclick="cerrarMenu()">Home</a>
+        <a href="#carta" onclick="cerrarMenu()">About</a>
+        <a href="#alimentos" onclick="cerrarMenu()">Menu</a>
+        <a href="#contacto" onclick="cerrarMenu()">Contact</a>
+        <a href="#" onclick="cerrarMenu()"><div id="cerrarMenu">x</div></a>
+    </nav>
+    <!-- Home -->
+    <section class="home" id="home">
+        <header>
+            <div class="container" id="headerContainer">
+                <div id="logo">
+                    <img src="Media/logo2.png" alt="logo">
+                    <h1>FAUGET<br/>COFFEE</h1>
+                </div>
+                <div id="menu">
+                    <div class="divisorLogoMenu"></div>
+                    <nav>
+                        <a href="#home">Home</a>
+                        <a href="#AbouSection">About</a>
+                        <a href="#alimentos">Menu</a>
+                        <a href="#contacto">Contact</a>
+                    </nav>
+                    <div class="menuLateral" onclick="verMenu()">
+                        <span>MENU</span>
+                        <div class="barras">
+                            <div class="linea-efecto"></div>
+                            <div class="linea"></div>
+                            <div class="linea-efecto"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        
+        <div id="divisorHorizontal"></div>
+
+        <div id="homeContenido">
+            <div id="bg1" class="bg">
+                <div id="bg2" class="bg">
+                    <div id="bg3" class="bg">
+                        <div id="texto">
+                            <h2>You can choose your <br/>favorite coffee here.</h2>
+                            <ul id="caracteristicas">
+                                <li><img src="Media/List.png"><span class="liSeparador">The best selection of beans</span></li>
+                                <li><img src="Media/List.png"><span class="liSeparador">Roasted with the best method</span></li>
+                                <li><img src="Media/List.png"><span class="liSeparador">Served with the best taste</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+       </div>
+    </section>
+
+    <section class="AbouSection" id="AbouSection">
+        <div id="divisorHorizontal" class="divisorAbout"></div>
+        
+        <section id="About">
+            
+            <div class="texto">
+                <h2>About US</h2>
+                <div class="divisor"></div>
+                <P>Lorem ipsum dolor sit amet, consectetur 
+                    adipisicing elit. Dolore rem incidunt sit 
+                    provident inventore natus laudantium quidem
+                    dolorum beatae magnam consequatur corrupti 
+                    harum maxime, atque iste hic in numquam illo?
+                        </P>
+                    </div>
+
+                    <div id="carusselCoffe">
+                        <div class="carta" id="carta">
+                            <h3>Nuestra Historia</h3>
+                        </div>
+                        <div class="carta">
+                            <h3>Nuestros Valores</h3>
+                        </div>
+                        <div class="carta">
+                            <h3>Nuestro Equipo</h3>
+                        </div>
+                        
+                    </div>
+        </section>
+        <div id="divisor2"></div>
+    </section>
+    
+    <section class="alimentos" id="alimentos">
+        <h2>NUESTRO MENU</h2>
+        <div class="container">
+            <div class="conteinerArrow">
+                <div class="arrow" id="arrowL" onclick="arrow()">&lt;</div>
+            </div>
+            <div class="content">
+                <h3 id="tituloAlimentos">Bebidas Calientes</h3>
+                <div id="divisorHorizontal"></div>
+                <div class="bebidas">
+                    <div id="bebida1" class="imagenesbebidas">
+                        LATTE MACCHIATO
+                    </div>
+                    <div id="bebida2" class="imagenesbebidas">
+                        FLAT WHITE
+                    </div>
+                    <div id="bebida3" class="imagenesbebidas">
+                        MOCHA
+                    </div>
+                    <div id="bebida4" class="imagenesbebidas">
+                        MACHIATTO 
+                    </div>
+                    <div id="bebida5" class="imagenesbebidas">
+                        CAPPUCINO
+                    </div>
+                    <div id="bebida6" class="imagenesbebidas">
+                        LATTE
+                    </div>
+                </div>
+
+            </div>
+            <div class="conteinerArrow">
+                <div class="arrow" id="arrowR" onclick="arrow()">&gt;</div>
+            </div>
+        </div>
+    </section>
+    
+    
+    <section id="contacto" class="contacto">
+        <div id="lineaH"></div>
+        <div class="container">
+            <h2>Contacto</h2>
+            <div id="redes">
+                <a href="https://www.instagram.com/jonatandlr/"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/jonatan-david-de-la-rosa-patlan-bb0750275/"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>Esta pagina fue creada solo usando HTML, CSS y JS</p>
+        <p class="copy"> &copy;jonatandlr</p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
