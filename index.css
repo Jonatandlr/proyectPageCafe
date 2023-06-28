@@ -689,6 +689,7 @@ footer .copy{
     }
     .alimentos .container{
         height: 100%;
+        padding: 20px 10px;
     }
     .alimentos .container .content .bebidas{
         padding: 5px 0px;
@@ -696,6 +697,7 @@ footer .copy{
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 10px;
         height: 100%;
+        padding-bottom: 20px;
     }
     .alimentos .container .content{
         padding: 0px;
